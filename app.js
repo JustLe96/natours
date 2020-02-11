@@ -8,14 +8,10 @@ const userRouter = require('./routes/userRoutes.js');
 const app = express();
 // Declare Middleware to read JSON
 app.use(morgan('dev'));
-
 app.use(express.json());
 
 /* SET UP ROUTING */
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
 
-// START THE SERVER
-app.listen(80, () => {
-  console.log('App running on port 80');
-});
+module.exports = app;

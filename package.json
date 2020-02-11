@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Practicing Node.js, Express, MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustLe96/natours.git"
+  },
+  "author": "Tung Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustLe96/natours/issues"
+  },
+  "homepage": "https://github.com/JustLe96/natours#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

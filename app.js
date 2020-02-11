@@ -74,11 +74,16 @@ const deleteTour = (req, res) => {
   });
 };
 
-app.get('/api/v1/tours', getAllTour);
-app.get('/api/v1/tours/:id', getTourById);
-app.post('/api/v1/tours', createTour);
-app.patch('/api/v1/tours/:id', updateTour);
-app.delete('/api/v1/tours/:id', deleteTour);
+/* SET UP ROUTING */
+app
+  .route('/api/v1/tours')
+  .get(getAllTour)
+  .post(createTour);
+app
+  .route('/api/v1/tours:id')
+  .get(getTourById)
+  .patch(updateTour)
+  .delete(deleteTour);
 
 app.listen(80, () => {
   console.log('App running on port 80');
